@@ -1,0 +1,75 @@
+{% extends "welcome/base.html" %}
+{% block content %}
+<div class="text-center">
+  <h1 class="display-4 text-center font-weight-bolder">
+    Park Before Arriving<br>
+  </h1>
+  <h2>
+    <small class="text-muted">Now booking a parking near you is even easier</small>
+  </h2>
+</div>
+<div>
+  {% load static %} <img src="{% static "welcome/static-city-green.png" %}" class="d-block w-100" alt="...">
+</div>
+
+{% load static %} <link href="{% static "welcome/base.css" %}" rel="stylesheet" id="bootstrap-css">
+<!------ Include the above in your HEAD tag ---------->
+
+<div style="background:#FF9966 !important" class="jumbotron">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12 col-lg-6 text-justify text-sm-left">
+              <h1 class="abc pt-5 top-justify">Book your park and save up to<br></h1>
+              <h1 class="xyz text-center bottom-justify"><b> 70% </b></h1>
+            </div>
+            <div class="col-18 col-lg-6 text-right">
+              {% load static %} <img src="{% static "welcome/car.png" %}" width="550" height="400" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reduce-margin-top">
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p>We are making the life in busy cities easier by providing an easy access to the parkings near you. Now you don't have to be worried about where to park?</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>NITK Hostels, National Institute of Technology, Surathkal, Karnataka</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">rahulgupta1997.rg50@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+91 9729864075</a> <span>or</span> <a href="tel:#">+91 8397050755</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-4">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <!--<div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>-->
+        </div>
+</footer>
+{% endblock content %}
